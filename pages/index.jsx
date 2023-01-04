@@ -1,6 +1,10 @@
 import Head from "next/head";
+
+// importing google font form @next/font
+// rename DM_Serif_Display as DMSDisplay
 import { DM_Serif_Display as DMSDisplay } from "@next/font/google";
 
+// delcaring dmsd as DMSDisplay to create {dmsd.classname}
 const dmsd = DMSDisplay({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
@@ -12,6 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div>
+        {/* calling the dmsd function into className = {dmsd.className} */}
         <h1 className={dmsd.className}> Hello</h1>
       </div>
     </>
