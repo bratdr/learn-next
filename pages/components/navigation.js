@@ -6,7 +6,7 @@ const navigation = () => {
   return (
     <div>
       {/* Navigation bar */}
-      <div className="sticky flex flex-row justify-between items-center bg-white px-8 text-black h-20 shadow-sm">
+      <div className="fixed w-full z-10 top-0 flex flex-row justify-between items-center bg-white px-8 text-black h-20 shadow-sm">
         <Link className="font-bold text-xl" href="/">
           Batdr.
         </Link>
