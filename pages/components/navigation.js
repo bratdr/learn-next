@@ -1,13 +1,17 @@
 import React from "react";
 import Link from "next/link";
+import { FiMenu } from "react-icons/fi";
 
 const navigation = () => {
   return (
     <div>
       {/* Navigation bar */}
-      <div className="flex flex-row justify-between items-center bg-black px-8 text-slate-50 h-20">
-        <Link href="/">Learn Next.js</Link>
-        <ul className="flex flex-row gap-6">
+      <div className="sticky flex flex-row justify-between items-center bg-white px-8 text-black h-20 shadow-sm">
+        <Link className="font-bold text-xl" href="/">
+          Batdr.
+        </Link>
+        <FiMenu className="block sm:hidden" size="24" />
+        <ul className="hidden sm:flex sm:flex-row gap-6 text-black">
           <li>
             {/* using next/link feature from next.js */}
             <Link href="/about">About</Link>
